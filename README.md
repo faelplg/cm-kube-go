@@ -42,7 +42,7 @@ Resolução:
 * Criação do programa em GO;
 * Criação do teste do programa;
 * Criação do `Dockerfile` e `cloudbuild.yaml` para processo de CI;
-  * A imagem da aplicação é criada com um _build_ numa imagem `scratch`;
+  * A imagem da aplicação é criada com um _build_ do programa copiado para uma imagem `scratch`;
 * Publicação da imagem no Docker Hub;
 * Criação de um `deployment.yaml` com a imagem publicada;
 * Criação de um serviço expondo a aplicação para acesso via browser;
