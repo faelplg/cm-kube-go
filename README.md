@@ -23,7 +23,7 @@ Resolução:
 
 #### Tarefa 2: Configuração do MySQL
 * Nome do artefato: `cm-kube-mysql`
-* [Repositório do GitHub (este)](https://github.com/faelplg/cm-kube-mysql)
+* [Repositório do GitHub](https://github.com/faelplg/cm-kube-mysql)
 
 Resolução:
 * Criação do `deployment.yaml`;
@@ -36,7 +36,7 @@ Resolução:
 
 #### Tarefa 3: Desafio Go!
 * Nome do artefato: `cm-kube-go`
-* [Repositório do GitHub](https://github.com/faelplg/cm-kube-go)
+* [Repositório do GitHub (este)](https://github.com/faelplg/cm-kube-go)
 
 Resolução:
 * Criação do programa em GO;
