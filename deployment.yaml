@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind:  Deployment
+metadata:
+  name: cm-kube-go
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: kube-go
+  template:
+    metadata:
+      labels:
+        app: kube-go
+    spec:
+      containers:
+        - name: cm-kube-go
+          image: faelplg/cm-kube-go
+          ports:
+            - containerPort: 80
