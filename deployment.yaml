@@ -1,9 +1,9 @@
 apiVersion: apps/v1
-kind:  Deployment
+kind: Deployment
 metadata:
   name: cm-kube-go
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: kube-go
@@ -13,7 +13,7 @@ spec:
         app: kube-go
     spec:
       containers:
-        - name: cm-kube-go
-          image: faelplg/cm-kube-go
+        - name: cm-kube-go-img
+          image: faelplg/cm-kube-go:latest
           ports:
-            - containerPort: 80
+            - containerPort: 8000
