@@ -1,0 +1,27 @@
+steps:
+  - id: "go version"
+    name: golang
+    args: [ 'go', 'version' ]
+    env: [ 'PROJECT_ROOT=github.com/faelplg/cm-kube-go' ]
+
+  - id: "go test"
+    name: golang
+    args: [ 'go', 'test' ]
+    env: [ 'PROJECT_ROOT=github.com/faelplg/cm-kube-go' ]
+
+  - id: "go build"
+    name: golang
+    args: [ 'go', 'build', '-o', 'cm-kube-go', '.' ]
+    env: [
+        'PROJECT_ROOT=github.com/faelplg/cm-kube-go',
+        'CGO_ENABLED=0',
+        'GOOS=linux'
+    ]
+
+  - id: "docker build"
+    name: docker
+    args: ['build', '--tag=faelplg/cm-kube-go:latest', '.']
+
+  - id: "docker push"
+    name: docker
+    args: ['push', 'faelplg/cm-kube-go:latest']
