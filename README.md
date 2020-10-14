@@ -37,6 +37,7 @@ Resolução:
 #### Tarefa 3: Desafio Go!
 * Nome do artefato: `cm-kube-go`
 * [Repositório do GitHub (este)](https://github.com/faelplg/cm-kube-go)
+* [Imagem no Docker Hub](https://hub.docker.com/r/faelplg/cm-kube-go)
 
 Resolução:
 * Criação do programa em GO;
